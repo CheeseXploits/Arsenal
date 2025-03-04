@@ -18,6 +18,9 @@ local NotificationText = Instance.new("TextLabel")
 --Properties:
  
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.DisplayOrder = 999
+ScreenGui.ResetOnSpawn = false
  
 Aimlock.Name = "Aimlock"
 Aimlock.Parent = ScreenGui
